@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  color: #334147;
+  box-shadow: -1px -1px 10px gray;
+}
+
+.bg_transparent{
+  background: transparent;
+}
+
+.bg_colored{
+  background-color: #cdebff;
+}
+
+.navbar h2 {
+  text-transform: uppercase;
+  color: black;
+}
+
+#bar {
+  list-style: none;
+  display: flex;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.navbar li {
+  margin: auto 1em;
+}
+
+
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar div {
+  display: flex;
+}
+
+.navbar span {
+  display: none;
+  cursor: pointer;
+}
+
+.media {
+  background: #58aaf6;
+  color: white;
+  width: 30px;
+  height: 30px;
+  padding-top: 5px;
+  border-radius: 50%;
+ 
+  text-align: center;
+}
+
+.list{
+  border-bottom:1px solid teal;
+}
+
+
+
+.home {
+  width: 100%;
+  height: 70vh;
+  background: url(./undraw_pair_programming_re_or4x.svg),
+    linear-gradient(to top right, #ffffff, #ffffff, #4bc1f8);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.one {
+  height: 25rem;
+  width: 30rem;
+  margin: 40% 26%;
+  padding: 1%;
+  text-align: bottom;
+  margin-top: 120%;
+}
+
+.one h1 {
+  font-size: 3.5rem;
+}
+
+.one span {
+  color: #00aeff;
+}
+
+.one p {
+  font-size: 1.2rem;
+  color: #607d8b;
+}
+
+.one button {
+  background-color: #00aeff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: block;
+  margin: 1% auto;
+}
+
+
+
+
+.last{
+  width:70%;
+  margin:2rem auto;
+  height: 11rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 35%;
+}
+
+.last h2{
+  text-align: center;
+  
+}
+
+.last div{
+  display: flex;
+  width: 100%;
+  background-color: #F5F5F5;
+  height: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  color: #9fa4a7;
+  font-weight: bolder;
+}
+
+.last h1{
+  font-size: 1.5rem;
+  font-family: 'Licorice', cursive;
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+  .last div{
+    width: 80%;
+  }
+  .navbar {
+    padding: 0;
+    height: 3rem;
+  }
+
+  .navbar h2 {
+    font-size: 1rem;
+  }
+
+  .navbar div {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar span {
+    display: block;
+  }
+
+  #bar {
+    display: none;
+    background-color: #bebaba80;
+    color: black;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .navbar li {
+    margin: 1rem 1rem;
+  }
+
+  
+  .one {
+    margin-top: 50rem;
+    width: 70%;
+  }
+
+  .one h1 {
+    font-size: 2rem;
+  }
+
+  .one p {
+    font-size: 0.8rem;
+  }
+
+
+
+  
+
+  .last{
+    height: 30rem;
+  }
+
+  .last div{
+    flex-direction: column;
+    width: 50%;
+    margin: 1% auto;
+  }
+  .navbar {
+    flex-direction: column;
+    height: 3.5rem;
+  }
+  #menu{
+    width: 100%;
+  }
+  
+
+  .last{
+    width: 100%;
+  }
+
+  /* .last{
+    font-size: 1.5rem;
+  } */
+
+}
